@@ -50,7 +50,7 @@
     @endif
 </div> --}}
 
-<form class="js-validation-signin" wire:submit="login">
+<form wire:submit="login">
     <div class="block block-themed block-rounded block-fx-shadow">
       <div class="block-header bg-gd-dusk">
         <h3 class="block-title">Please Sign In</h3>

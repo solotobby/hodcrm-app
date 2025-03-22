@@ -4,6 +4,8 @@ use App\Http\Controllers\HomeController;
 use App\Livewire\Settings\Appearance;
 use App\Livewire\Settings\Password;
 use App\Livewire\Settings\Profile;
+use App\Livewire\System\CreateDenomination;
+use App\Livewire\System\ListDenomination;
 use App\Livewire\System\SystemDashboard;
 use Illuminate\Support\Facades\Route;
 
@@ -18,6 +20,8 @@ Route::view('dashboard', 'dashboard')
 Route::middleware(['auth'])->group(function () { 
     Route::get('home', [HomeController::class, 'home'])->name('home');
     Route::get('system/home', SystemDashboard::class)->name('system');
+    Route::get('denomination/create', CreateDenomination::class)->name('denomination.create');
+    Route::get('denomination/list', ListDenomination::class)->name('denomination.list');
 
 });
 

@@ -536,5 +536,7 @@
 
     <!-- Page JS Code -->
     <script src="{{ asset('assets/js/pages/be_pages_dashboard.min.js')}}"></script>
+
+  
   </body>
 </html>
