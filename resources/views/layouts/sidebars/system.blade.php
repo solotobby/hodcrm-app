@@ -25,6 +25,24 @@
           </li>
         </ul>
       </li>
+      <li class="nav-main-item">
+        <a class="nav-main-link nav-main-link-submenu active" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
+          <i class="nav-main-link-icon fa fa-users"></i>
+          <span class="nav-main-link-name">Users</span>
+        </a>
+        <ul class="nav-main-submenu">
+          <li class="nav-main-item">
+            <a class="nav-main-link" href="{{ route('create.user') }}">
+              <span class="nav-main-link-name">create</span>
+            </a>
+          </li>
+          <li class="nav-main-item">
+            <a class="nav-main-link" href="{{ route('list.user') }}">
+              <span class="nav-main-link-name">List</span>
+            </a>
+          </li>
+        </ul>
+      </li>
       {{-- <li class="nav-main-item">
         <a class="nav-main-link nav-main-link-submenu" data-toggle="submenu" aria-haspopup="true" aria-expanded="false" href="#">
           <i class="nav-main-link-icon fa fa-award"></i>
